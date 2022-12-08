@@ -45,6 +45,20 @@ h2 {
     max-width: 65px;
     max-height: 65px;
 }
+.img-pres-method {
+    width: 600px;
+}
+
+/* nav de la presentation */
+.section-presentation{margin: 100px 0 70px 0; overflow: hidden; padding-bottom: 20px; width: 100%!important; height: auto!important;}
+.container-presentation{float: left; width: 1600px;max-width:1600px!important;height: 100%!important;}
+.container-presentation > img {width: 900px; height: 650px; border-radius: 50px; padding: 10px; margin-left: 70px;}
+.slidePortfolio{width: 100%;height: 100%;transition: 0.7s all ease;}
+.content-presentation {position: absolute; top: 250px; background: #fff; border-radius: 50px; margin-left: 20px; width: 300px; height: 250px; padding: 30px 30px 0 30px;}
+.content-presentation > div {width: 100%; display: flex; justify-content: center; margin: 0 auto; padding-bottom: 0;}
+.navigation{z-index: 2; user-select: none; width: 160px; display: flex; justify-content: space-around;}
+.nav-prev{background: url('../images/previous.png') no-repeat 2px -2px ; background-size: 100% 100%; width: 40px; height: 40px; display: inline-block; cursor: pointer;}
+.nav-next{background: url('../images/next.png') no-repeat -2px -2px; background-size: 100% 100%; width: 40px; height: 40px; display: inline-block; margin-left: 10px;  cursor: pointer;}
 
 /*footer*/
 

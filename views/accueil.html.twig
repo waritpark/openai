@@ -2,6 +2,86 @@
 
 {% block contenu %}
 <div class="container py-5">
-AAAAAAAAAAAA
+    {# section presentation #}
+    <div class="section-presentation max-w-1600 mx-auto position-relative" id="containerPortfolio">
+        {# navigation #}
+        <div class="navigation">
+            <span class="nav-prev disable" id="prev"></span>
+            <span class="nav-next" id="next"></span>
+        </div>
+        {# fin navigation #}
+
+        <h3 class="d-flex w-100 justify-content-center pb-2 text-white">Présentation</h3>
+
+        {# slide presentation #}
+        <div class="slidePortfolio" id="sliderPortfolio" data-slide="0" style="transform: translateX(0px)">
+            {# presentation : sommaire #}
+            <div class="container-presentation text-align-center">
+                <h2 class="">Sommaire :</h2>
+                <div class="py-3">
+                    <p>I. Présentation de l'entreprise​</p>
+                    <p>II. DALL-E​</p>
+                    <p>III. Mise en place de l'environnement​</p>
+                    <p>IV. Conclusion</p>
+                </div>
+            </div>
+            {# fin sommaire #}
+            {# presentation : description #}
+            <div class="container-presentation text-align-center">
+                <h2 class="">I. Présentation de l'entreprise​</h2>
+                <div class="d-flex justify-content-between py-3">
+                    <div class="px-3">
+                        <p>Entreprise basée à San Francisco. ​</p>
+                        <p>L'objectif de cette société est de promouvoir et développer une intelligence artificielle.​</p>
+                        <p>les deux présidents :​ Elon Musk (Tesla, SpaceX),​ Sam Altman (Y Combinator).</p>
+                    </div>
+                    <div class="px-3">
+                        <p>Les intelligences artificielles :​<p>
+                        <p>GPT-2 : Capable d'écrire des articles de presse et des œuvres de fiction.​</p>
+                        <p>GPT-3 : traitement du langage naturel​</p>
+                        <p>DALL-E : générateur d'images​</p>
+                        <p>ChatGPT : modèle de langage</p>
+                    </div>
+                </div>
+            </div>
+            {# fin description #}
+            {# presentation : dall-e 1er partie #}
+            <div class="container-presentation text-align-center">
+                <h2>II. DALL-E​</h2>
+                <div>
+                    <p>3 méthodes pour intéragir avec les images :</p>
+                    <p>- Créer des images à partir de zéro en fonction d'une invite de texte</p>
+                    <p>- Création de modifications d'une image existante en fonction d'une nouvelle invite de texte</p>
+                    <p>- Créer des variantes d'une image existante</p>
+                </div>
+            </div>
+            {# presentation : dall-e 2eme partie #}
+            <div class="container-presentation text-align-center">
+                <div style="padding-left:350px;" class="d-flex flex-column">
+                    <img class="img-pres-method" src="/images/method1.jpg" alt="methode 1">
+                    <img class="img-pres-method" src="/images/method2.jpg" alt="methode 2">
+                    <img class="img-pres-method" src="/images/method3.jpg" alt="methode 3">
+                </div>
+            </div>
+            {# fin dall-e #}
+            {# presentation : Mise en place de l'environnement #}
+            <div class="container-presentation text-align-center">
+                <h2 class="pb-4">III. Mise en place de l'environnement​​</h2>
+                <p>1. Création d'un projet nodejs</p>
+                <ul>
+                    <li>Installation des packages : </li>
+                    <li><a href="https://www.npmjs.com/package/nodemon">Nodemon</a></li>
+                    <li><a href="https://expressjs.com/fr/starter/hello-world.html">Express</a></li>
+                    <li><a href="https://www.npmjs.com/package/twig">twig</a></li>
+                    <li><a href="https://www.npmjs.com/package/bootstrap">Bootstrap</a></li>
+                </ul>
+                <p>2. Mise en place du routeur et du serveur.</p>
+
+            </div>
+            {# fin mise en place de l'env #}
+        </div>
+        {# fin slide presentation #}
+    </div>
+    {# fin section presentation #}
 </div>
 {% endblock %}
