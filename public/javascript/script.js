@@ -40,7 +40,7 @@ window.onload = function(){
     sections = sliderContainer.children;
 
     var totalWidth = sliderLength * windowWt;
-    console.log(sliderLength);
+    // console.log(sliderLength);
     container.style.width = windowWt+"px";
     sliderContainer.style.width = totalWidth+"px";
     container.style.height = windowHt+"px";

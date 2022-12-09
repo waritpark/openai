@@ -14,6 +14,10 @@ router.get("/", (requete, reponse) => {
     reponse.render("accueil.html.twig");
 });
 
+// openai
+const openaiController = require('./controllers/openaiController');
+router.post("/generateimage", openaiController.openaiGenerateImage);
+
 // Gère l'erreur 404
 router.use((requete, reponse, suite) => {
     const error = new Error("Page non trouvée");

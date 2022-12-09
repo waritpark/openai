@@ -1,9 +1,9 @@
 {% extends "base.html.twig" %}
 
 {% block contenu %}
-<div class="container py-5">
+<section id="contenu" class="container pt-5">
     {# section presentation #}
-    <div class="section-presentation max-w-1600 mx-auto position-relative" id="containerPortfolio">
+    <section class="section-presentation mx-auto position-relative" id="containerPortfolio">
         {# navigation #}
         <div class="navigation">
             <span class="nav-prev disable" id="prev"></span>
@@ -67,21 +67,58 @@
             {# presentation : Mise en place de l'environnement #}
             <div class="container-presentation text-align-center">
                 <h2 class="pb-4">III. Mise en place de l'environnement​​</h2>
-                <p>1. Création d'un projet nodejs</p>
+                <p>Création d'un projet nodejs</p>
                 <ul>
                     <li>Installation des packages : </li>
                     <li><a href="https://www.npmjs.com/package/nodemon">Nodemon</a></li>
                     <li><a href="https://expressjs.com/fr/starter/hello-world.html">Express</a></li>
                     <li><a href="https://www.npmjs.com/package/twig">twig</a></li>
+                    <li><a href="https://www.npmjs.com/package/openai">Open AI</a></li>
+                    <li><a href="https://www.npmjs.com/package/dotenv">Dotenv</a></li>
                     <li><a href="https://www.npmjs.com/package/bootstrap">Bootstrap</a></li>
+                    <li><a href="https://www.npmjs.com/package/body-parser">Body-parser</a></li>
                 </ul>
-                <p>2. Mise en place du routeur et du serveur.</p>
-
             </div>
             {# fin mise en place de l'env #}
         </div>
         {# fin slide presentation #}
-    </div>
+    </section>
     {# fin section presentation #}
-</div>
+
+    {# formulaire pour générer une image #}
+    <section class="pb-5">
+        <h2>Génération d'image</h2>
+        <form class="py-3" id="image-form" method="post" action="/generateimage">
+
+            <div class="my-2">
+                <input type="text" id="prompt" name="prompt" placeholder="Enter Text" />
+            </div>
+
+            <!-- taille de l'image généré -->
+            <div class="my-2">
+                <select name="size" id="size">
+                    <option value="small">Petite</option>
+                    <option value="medium" selected>Moyenne</option>
+                    <option value="large">Grande</option>
+                </select>
+            </div>
+
+            {# value pour le openaicontroller #}
+            <input type="submit" class="bg-dark text-white" value="Générer !"></input>
+        </form>
+    </section>
+    {# fin formulaire #}
+
+    {# Image générée #}
+    <section>
+        <div class="image my-5">
+            <div class="image-container">
+                <h2 class="msg"></h2>
+                <img src="{{imgs}}" alt="" id="image" />
+                </div>
+            </div>
+        </div>
+    </section>
+    {# fin bloc image généré #}
+</section>
 {% endblock %}

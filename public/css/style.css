@@ -50,7 +50,7 @@ h2 {
 }
 
 /* nav de la presentation */
-.section-presentation{margin: 100px 0 70px 0; overflow: hidden; padding-bottom: 20px; width: 100%!important; height: auto!important;}
+.section-presentation{overflow: hidden; width: 100%!important; height: auto!important;}
 .container-presentation{float: left; width: 1600px;max-width:1600px!important;height: 100%!important;}
 .container-presentation > img {width: 900px; height: 650px; border-radius: 50px; padding: 10px; margin-left: 70px;}
 .slidePortfolio{width: 100%;height: 100%;transition: 0.7s all ease;}
@@ -59,6 +59,12 @@ h2 {
 .navigation{z-index: 2; user-select: none; width: 160px; display: flex; justify-content: space-around;}
 .nav-prev{background: url('../images/previous.png') no-repeat 2px -2px ; background-size: 100% 100%; width: 40px; height: 40px; display: inline-block; cursor: pointer;}
 .nav-next{background: url('../images/next.png') no-repeat -2px -2px; background-size: 100% 100%; width: 40px; height: 40px; display: inline-block; margin-left: 10px;  cursor: pointer;}
+
+
+
+/* formulaire */
+#image-form{width: 400px;}
+input, select{border-radius: 10px;padding: 5px 15px 5px 15px;border:1px solid black; border-radius:10px}
 
 /*footer*/
 
